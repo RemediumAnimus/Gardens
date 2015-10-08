@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+
+		<title>Контакты</title>
+
+        <!-- Reset styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/reset.css" >
+
+        <!-- Template styles -->
+        <link rel="stylesheet" href="js/vendor/selectBox/jquery.selectBox.css">
+        <link rel="stylesheet" href="js/vendor/rhinoslider/rhinoslider-1.05.css" >
+        <link rel="stylesheet" href="js/vendor/magnific-popup/magnific-popup.css" >
+        <link rel="stylesheet" href="js/vendor/tooltip/jquery.qtip.min.css" >
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel='stylesheet prefetch' href='http://cdn.rawgit.com/angular/bower-material/v0.10.0/angular-material.css'>
+        <link rel="stylesheet" href="template-styles.css">
+
+        <!--[if lt IE 10]><script src="js/vendor/IE9.js"></script><![endif]-->
+
+        <!-- Scripts -->
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-messages.min.js'></script>
+        <script src='http://cdn.rawgit.com/angular/bower-material/v0.10.0/angular-material.js'></script>
+        <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/assets-cache.js'></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/modernizr.custom.js"></script>
+        <script src="js/vendor/selectBox/jquery.selectBox.js"></script>
+        <script src="js/vendor/fastclick.js"></script>
+        <script src="js/vendor/jsor/jssor.slider.mini.js"></script>
+        <script src="js/vendor/jcarousel/jquery.jcarousel.js"></script>
+        <script src="js/vendor/rhinoslider/rhinoslider-1.05.min.js" type="text/javascript"></script>
+        <script src="js/vendor/rhinoslider/easing.js" type="text/javascript"></script>
+        <script src="js/vendor/rhinoslider/mousewheel.js" type="text/javascript"></script>
+        <script src="js/vendor/jquery.touchwipe.min.js" type="text/javascript"></script>
+        <script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
+        <script src="js/vendor/tooltip/jquery.qtip.min.js" type="text/javascript"></script>
+        <script src="js/vendor/jquery.touchSwipe.min.js" type="text/javascript"></script>
+        <script src="js/vendor/maskedPlug/masked.js" type="text/javascript"></script>
+        <script src="js/vendor/jquery.placeholder.min.js" type="text/javascript"></script>
+        <script src="js/vendor/scripts.js"></script>
+
+    </head>
+
+    <div id="page">
+
+    <div ng-controller="AppCtrl" ng-app="MyApp">
+
+    <div id="mobile-indicator"> </div>
+    <div id="middle-indicator"> </div>
+    <div id="menu-indicator"> </div>
+    <div id="search-indicator"> </div>
+
+
+        <header>
+
+            <div class="nav-logo-container">
+
+                <div class="nav-part">
+
+                    <div class="inner-m not-padding">
+
+                        <nav>
+
+                            <div class="burger">
+                                <ul class="menu">
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Доставка и оплата</a></li>
+                                    <li><a href="#">Вопрос-ответ</a></li>
+                                    <li><a href="#">Отзывы садоводов</a></li>
+                                    <li><a href="#">Галерея установок</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+
+                            <ul class="reg">
+                                <li><a href="#">Вход</a> <span class="reg-i">и</span> <a href="#" class="reg-a">регистрация</a></li>
+                                <li><span class="city">Ваш город:</span>
+                                    <div class="select-wrap">
+                                        <md-input-container>
+                                        <md-select name="myModel" lect class="select-m" placeholder="Москва" ng-model="myModel" required>
+                                            <md-option value="1">Москва</md-option>
+                                            <md-option value="2">Сергиев посад</md-option>
+                                         </md-select>
+                                         </md-input-container>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </nav>
+
+                    </div>
+                    <!-- /.inner-m -->
+
+                </div>
+                <!-- /.nav-part -->
+
+                <div class="logo-part">
+
+                    <div class="inner-m not-padding not-relative">
+
+                        <div class="container-outer fixed">
+
+                            <div class="logo">
+                                <h3>TEPLITSY.GURU</h3>
+                                <span>Всё для дома и сада</span>
+                            </div>
+
+                        </div>
+                        <!-- /.container-outer -->
+
+                        <div class="container-x2">
+
+                            <div class="container-outer helper">
+
+                                <div class="middle">
+
+                                    <span>+7 <b class="green">(495)</b> 111-11-11</span>
+                                    <span>+7 <b class="green">(963)</b> 123 45 67</span>
+                                    <a href="#pop-up-call" class="popup-modal"><span>Заказать обратный звонок</span></a>
+
+                                </div>
+                                <!-- /.middle -->
+
+                            </div>
+                            <!-- /.container-outer -->
+
+                            <a class="enter-cab">
+                                <span>Вход</span>
+                            </a>
+                            <!-- /.enter-cab -->
+
+                            <a class="catalog-button">
+
+                                <div class="cent">
+                                    <span><span>Каталог продукции</span></span>
+                                </div>
+
+                            </a>
+                            <!-- /.catalog-button -->
+
+                            <div class="container-outer min">
+
+                                <div class="right">
+
+                                    <a class="phone popup-modal" href="#pop-up-call">
+
+                                    </a>
+
+                                    <a class="stat" href="#">
+                                        <div class="count">
+                                            <div class="cont">
+                                                <span>1</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="bucket" href="#">
+                                        <div class="pic">
+                                            <div class="count">
+                                                <div class="cont">
+                                                    <span>8</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <span>Корзина</span>
+                                            <span>8 933 201 руб.</span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <!-- /.right -->
+
+                            </div>
+                            <!-- /.container-outer -->
+
+                        </div>
+                        <!-- /.container-x2 -->
+
+                    </div>
+                    <!-- /.inner-m -->
+
+                </div>
+                <!-- /.logo-part -->
+
+            </div>
+            <!-- /.nav-logo-container -->
+
+            <div class="menu-part">
+
+                <div class="inner-m">
+
+                    <div class="container-m">
+
+                        <div class="head-m">
+                            <div class="tab">
+                                <span>
+                                    <b>
+                                        Каталог продукции
+                                        <div class="close-m"></div>
+                                    </b>
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="search">
+
+                            <fieldset>
+                                <input type="text" placeholder="Поиск по сайту">
+                            </fieldset>
+
+                        </div>
+                        <!-- /.search -->
+
+                        <div class="table-t">
+
+                            <ul>
+                                <li class="it"><a>Теплицы и парники</a>
+                                    <ul>
+                                        <li><a href="#"><span>Семена</span></a></li>
+                                        <li><a href="#"><span>Рассада</span></a></li>
+                                        <li><a href="#"><span>Удобрения</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="it"><a>Поликарбонат</a>
+                                    <ul>
+                                        <li><a href="#"><span>Семена</span></a></li>
+                                        <li><a href="#"><span>Рассада</span></a></li>
+                                        <li><a href="#"><span>Удобрения</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="it"><a>Для посадки</a>
+                                    <ul>
+                                        <li><a href="#"><span>Семена</span></a></li>
+                                        <li><a href="#"><span>Рассада</span></a></li>
+                                        <li><a href="#"><span>Удобрения</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="it"><a>Садовый инструмент</a>
+                                    <ul>
+                                        <li><a href="#"><span>Семена</span></a></li>
+                                        <li><a href="#"><span>Рассада</span></a></li>
+                                        <li><a href="#"><span>Удобрения</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="it"><a>Для полива</a>
+                                    <ul>
+                                        <li><a href="#"><span>Семена</span></a></li>
+                                        <li><a href="#"><span>Рассада</span></a></li>
+                                        <li><a href="#"><span>Удобрения</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">Вопрос-ответ</a></li>
+                                <li><a href="#">Отзывы садоводов</a></li>
+                                <li><a href="#">Галерея установок</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+
+                        </div>
+                        <!-- /.table-t -->
+
+                    </div>
+                    <!-- /.container-m -->
+
+                </div>
+                <!-- /.inner-m -->
+
+            </div>
+            <!-- /.menu-part -->
+
+        </header>
+
+
+
+
+
+        <main>
+
+
+            <div class="crumbs">
+
+                <div class="inner-m">
+
+                    <ul>
+                    	<li><a href="#">Главная</a></li>
+                    	<li><a href="#">Галерея установки</a></li>
+                    	<li><a href="#">Монтаж теплицы на Северозападе Сергиева Посада</a></li>
+                    </ul>
+
+                </div>
+                <!-- /.inner-m -->
+
+            </div>
+            <!-- /.crumbs -->
+
+            <div class="inner-m">
+
+                <h2 class="h2-mt18 h2-center">Контакты</h2>
+
+                <div class="map-container">
+
+                    <div class="left">
+                        <div class="container-in">
+
+                            <div class="container-in-m">
+                                <div class="top">
+                                    <h5>Адрес:</h5>
+                                    <span>
+                                       г. Сергиев Посад, ул. Ленина, д.27, офис 14
+                                    </span>
+                                    <span>
+                                       Телефон: 8 800 200 40 000
+                                    </span>
+                                </div>
+                                <!-- /.top -->
+                                <div class="bottom">
+
+                                    <div class="container-bottom">
+
+                                        <div class="info">
+
+                                            <div class="trow">
+                                                <div class="tcell">ОГРН</div>
+                                                <div class="tcell">1135042008628</div>
+                                            </div>
+                                            <div class="trow">
+                                                <div class="tcell">ИНН</div>
+                                                <div class="tcell">5042130152</div>
+                                            </div>
+                                            <div class="trow">
+                                                <div class="tcell">КПП</div>
+                                                <div class="tcell">504201001</div>
+                                            </div>
+                                            <div class="trow">
+                                                <div class="tcell">Р/сч</div>
+                                                <div class="tcell">40702810802101000644</div>
+                                            </div>
+                                            <div class="trow">
+                                                <div class="tcell">ОКПО</div>
+                                                <div class="tcell">48771942</div>
+                                            </div>
+                                            <div class="trow">
+                                                <div class="tcell">БИК</div>
+                                                <div class="tcell">044525787</div>
+                                            </div>
+                                            <div class="trow">
+                                                <div class="tcell">К/сч</div>
+                                                <div class="tcell">30101810100000000787</div>
+                                            </div>
+
+                                        </div>
+                                        <!-- /.info -->
+
+                                    </div>
+                                    <!-- /.container-bottom -->
+
+                                </div>
+                                <!-- /.bottom -->
+                            </div>
+                            <!-- /.container-in-m -->
+
+                        </div>
+                        <!-- /.container-in -->
+                    </div>
+                    <!-- /.left -->
+
+                    <div class="right">
+                        <div class="container-in">
+                            <div id="map"></div>
+                        </div>
+                        <!-- /.container-in -->
+                    </div>
+                    <!-- /.right -->
+                </div>
+
+                <div class="bans bans-b">
+
+                   <div class="pic">
+                        <div class="container-in">
+                            <img src="img/tmp/ban1.png" alt="#">
+                        </div>
+                   </div>
+
+                   <div class="pic">
+                        <div class="container-in">
+                             <img src="img/tmp/ban2.png" alt="#">
+                        </div>
+                   </div>
+
+                </div>
+                <!-- /.bans -->
+
+                <div class="news-block">
+
+                    <h2 class="center">
+                       <div class="n-news">Новости
+                           <a class="count"><div class="cen"><span><b><i>45</i></b></span></div></a>
+                       </div>
+                    </h2>
+
+                    <div class="items">
+
+                        <div class="item">
+
+                            <div class="container-in">
+
+                                <div class="head">
+
+                                    <div class="left">
+
+                                        <h5>Как посадить редис</h5>
+                                        <span>12 марта 2015</span>
+
+                                    </div>
+
+                                    <div class="right">
+
+                                        <a href="#"><span>Читать полностью</span></a>
+
+                                    </div>
+
+                                </div>
+                                <!-- /.head -->
+
+                                <div class="cont">
+                                    Равным образом дальнейшее развитие различных форм деятельности влечет
+                                    за собой процесс внедрения и модернизации существенных финансовых и
+                                     административных условий. Идейные соображения высшего порядка, а
+                                      также дальнейшее развитие различных форм деятельности представляет
+                                      собой интересный эксперимент проверки модели развития. Равным образом
+                                       консультация с широким активом требуют от нас анализа направлений
+                                        прогрессивного развития.
+                                </div>
+                                <!-- /.cont -->
+
+                            </div>
+                            <!-- /.container-in -->
+
+                        </div>
+                        <!-- /.item -->
+
+                        <div class="item">
+
+                            <div class="container-in">
+
+                                <div class="head">
+
+                                    <div class="left">
+
+                                        <h5>Чего боятся цветы, что заставляет их сердце биться?</h5>
+                                        <span>12 марта 2015</span>
+
+                                    </div>
+
+                                    <div class="right">
+
+                                        <a href="#"><span>Читать полностью</span></a>
+
+                                    </div>
+
+                                </div>
+                                <!-- /.head -->
+
+                                <div class="cont">
+                                    Равным образом дальнейшее развитие различных форм деятельности влечет
+                                    за собой процесс внедрения и модернизации существенных финансовых и
+                                     административных условий. Идейные соображения высшего порядка, а
+                                      также дальнейшее развитие различных форм деятельности представляет
+                                      собой интересный эксперимент проверки модели развития. Равным образом
+                                       консультация с широким активом требуют от нас анализа направлений
+                                        прогрессивного развития.
+                                </div>
+                                <!-- /.cont -->
+
+                            </div>
+                            <!-- /.container-in -->
+
+                        </div>
+                        <!-- /.item -->
+
+                    </div>
+                    <!-- /.items -->
+
+                </div>
+                <!-- /.news-block -->
+
+                <div class="cities">
+
+                    <div class="top">
+
+                        <h3>
+                            <span class="cb n-m">
+                            Наши установки в городах МО
+                            <a class="button-all"><span><span class="togg">Показать все</span></span></a>
+                            </span>
+                        </h3>
+
+                    </div>
+                    <!-- /.top -->
+
+                    <div class="middle">
+
+                        <div class="container-all">
+
+                            <ul>
+                                <li><a href="#"><span>Апрелевка</span></a></li>
+                                <li><a href="#"><span>Балашиха</span></a></li>
+                                <li><a href="#"><span>Видное</span></a></li>
+                                <li><a href="#"><span>Волоколамск</span></a></li>
+                                <li><a href="#"><span>Воскресенск</span></a></li>
+                                <li><a href="#"><span>Голицино</span></a></li>
+                            </ul>
+
+                            <div class="container-right">
+
+                                <ul>
+                                    <li><a href="#"><span>Звенигород</span></a></li>
+                                    <li><a href="#"><span>Ивантеевка</span></a></li>
+                                    <li><a href="#"><span>Истра</span></a></li>
+                                    <li><a href="#"><span>Климовск</span></a></li>
+                                    <li><a href="#"><span>Клин</span></a></li>
+                                    <li><a href="#"><span>Коломна</span></a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#"><span>Королев</span></a></li>
+                                    <li><a href="#"><span>Котельники</span></a></li>
+                                    <li><a href="#"><span>Красногорск</span></a></li>
+                                    <li><a href="#"><span>Москва</span></a></li>
+                                    <li><a href="#"><span>Мытищи</span></a></li>
+                                    <li><a href="#"><span>Ногинск</span></a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#"><span>Одинцово</span></a></li>
+                                    <li><a href="#"><span>Подольск</span></a></li>
+                                    <li><a href="#"><span>Пушкино</span></a></li>
+                                    <li><a href="#"><span>Реутов</span></a></li>
+                                    <li><a href="#"><span>Сергиев Посад</span></a></li>
+                                    <li><a href="#"><span>Чехов</span></a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#"><span>Звенигород</span></a></li>
+                                    <li><a href="#"><span>Ивантеевка</span></a></li>
+                                    <li><a href="#"><span>Истра</span></a></li>
+                                    <li><a href="#"><span>Климовск</span></a></li>
+                                    <li><a href="#"><span>Клин</span></a></li>
+                                    <li><a href="#"><span>Коломна</span></a></li>
+                                </ul>
+
+                            </div>
+                            <!-- /.container-right -->
+
+                        </div>
+                        <!-- /.container-all -->
+
+                        <a class="button-all button-all-fix"><span><span class="togg">Показать все</span></span></a>
+
+                    </div>
+                    <!-- /.middle -->
+
+                </div>
+                <!-- /.cities -->
+
+            </div>
+            <!-- /.inner-m -->
+
+
+        </main>
+
+
+
+
+
+        <footer>
+
+            <div class="inner-m">
+
+                <div class="bottom">
+
+                    <div class="first-block block">
+
+                        <h4>Каталог товаров</h4>
+
+                        <ul>
+                            <li><a href="#">Теплицы</a></li>
+                            <li><a href="#">Парники</a></li>
+                            <li><a href="#">Сотовый поликарбонат</a></li>
+                            <li><a href="#">Семена</a></li>
+                            <li><a href="#">Рассада</a></li>
+                            <li class="h-hide"><a href="#">Удобрения</a></li>
+                            <li class="h-hide"><a href="#">Лопаты</a></li>
+                        </ul>
+
+                    </div>
+                    <!-- /.first-block -->
+
+                    <div class="second-block block">
+
+                        <ul>
+                            <li><a href="#">Удобрения</a></li>
+                            <li><a href="#">Лопаты</a></li>
+                            <li><a href="#">Тяпки</a></li>
+                            <li><a href="#">Совки</a></li>
+                            <li><a href="#">Бочки</a></li>
+                        </ul>
+
+                    </div>
+                    <!-- /.second-block -->
+
+                    <div class="third-block block">
+
+                        <ul>
+                            <li><a href="#">Шланги</a></li>
+                            <li><a href="#">Фитинги</a></li>
+                            <li><a href="#">Системы полива</a></li>
+                            <li><a href="#">Души для газона</a></li>
+                            <li><a href="#">Тяпки</a></li>
+                            <li class="h-hide"><a href="#">Совки</a></li>
+                            <li class="h-hide"><a href="#">Бочки</a></li>
+                        </ul>
+
+                    </div>
+                    <!-- /.third-block -->
+
+                    <div class="fouth-block block">
+
+                        <h4>Компания</h4>
+
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Вопрос-ответ</a></li>
+                            <li><a href="#">Отзывы садоводов</a></li>
+                            <li><a href="#">Галерея установок</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+
+                    </div>
+                    <!-- /.fouth-block -->
+
+                    <div class="fifth-block block">
+
+                        <div class="container-b">
+
+                            <div class="tel">8 800 200 40 000</div>
+                            <div class="info">12757 г. Москва, ул. Ленина, д.27-14</div>
+                            <div class="icons">
+
+                                <a href="#" class="circle f">
+                                    <div class="pic"><img src="img/facebook.svg" alt="#"></div>
+                                </a>
+                                <a href="#" class="circle vk">
+                                    <div class="pic"><img src="img/vkontakte.svg" alt="#"></div>
+                                </a>
+                                <a href="#" class="circle i">
+                                    <div class="pic"><img src="img/instagram.svg" alt="#"></div>
+                                </a>
+                                <a href="#" class="circle you">
+                                    <div class="pic"><img src="img/youtube.svg" alt="#"></div>
+                                </a>
+                                <a href="#" class="circle g">
+                                    <div class="pic"><img src="img/google-plus.svg" alt="#"></div>
+                                </a>
+                                <a href="#" class="circle b">
+                                    <div class="pic"><img src="img/twitter.svg" alt="#"></div>
+                                </a>
+
+                            </div>
+                            <!-- /.icons -->
+
+                            <div class="fact"><a href="#">Разработка сайта — студия Факт</a></div>
+
+                            <div class="site">© Сад-огород — 2015</div>
+
+                        </div>
+                        <!-- /.container-b -->
+
+                    </div>
+                    <!-- /.fifth-block -->
+
+                </div>
+                <!-- /.bottom -->
+
+            </div>
+            <!-- /.inner-m -->
+
+        </footer>
+
+        <div class="pop-up-call zoom-anim-dialog mfp-hide" id="pop-up-call">
+
+            <div class="container-call">
+
+                <div class="modal-close"></div>
+
+                <h2>Заказать обратный звонок</h2>
+                <form class="rf">
+                    <fieldset>
+                        <label>Как к Вам обращаться? <b>*</b></label>
+                        <input type="text" class="rfield">
+                    </fieldset>
+                    <fieldset>
+                        <label>Номер телефона <b>*</b></label>
+                        <input type="text" class="rfield phone-mask">
+                    </fieldset>
+                    <input type="submit" value="Перезвони мне" class="disabled">
+                </form>
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.pop-up-call -->
+
+        <div class="pop-up-item">
+
+            <div class="container-in">
+
+                <h5>Товар добавлен в корзину</h5>
+                <div class="close-it"></div>
+                <div class="tbody">
+                    <div class="tcell">
+                        <div class="pic"><img src="img/tmp/item1.png" alt="" /></div>
+                    </div>
+                    <!-- /.tcell -->
+                    <div class="tcell">
+                        Грабли "Осенние"
+                    </div>
+                    <!-- /.tcell -->
+                    <div class="tcell">
+                        1500 Руб.
+                    </div>
+                    <!-- /.tcell -->
+                </div>
+                <!-- /.tbody -->
+
+            </div>
+            <!-- /.container-in -->
+
+        </div>
+        <!-- /.pop-up-item -->
+
+    </div>
+
+    </div><!--/page-->
+
+</html>
