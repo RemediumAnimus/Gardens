@@ -4512,7 +4512,7 @@ main .bucket-m .container-in .tbody .half {
   display: table;
   vertical-align: middle;
   height: 61px;
-  width: auto;
+  width: 100%;
   border-top: 1px solid #e1e8e0;
   margin-left: -1px;
 }
